@@ -14,24 +14,59 @@ p {
     color: white;
 }
 
-ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
+
+/******Nav*********/
+nav {
+    width: 100%;
     background-color: #333;
 }
 
-li {
-    float: left;
+ul {
+    width: 80%;
+    margin: 0 auto;
+    
+    
 }
 
-li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
+ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 15px;
+}
+
+ul li a {
     text-decoration: none;
+    color: white;
 }
 
+.toggle {
+    width: 100%;
+    padding: 15px 15px;
+    text-align: right;
+    box-sizing: border-box;
+    color: white;
+    font-size: 25px;
+    display: none;
+}
 
+.navNames {
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px){
+    .toggle{
+        display: block;
+    }
+
+    ul {
+        width: 100%;
+        display: none;
+    }
+    ul li {
+        display: block;
+        text-align: center;
+    }
+    .active {
+        display: block;
+    }
+}

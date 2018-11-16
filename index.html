@@ -4,17 +4,36 @@
 <title>Omni Heine Brothers</title>
 <link rel="stylesheet" href="css/normailze.css">
 <link rel="stylesheet" href="css/main.css">
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body id='main'>
-
-  <ul>
-    <li><h1>Meet your Baristas!</h1></li>
+    <h1>Meet your Baristas!</h1>
+  <nav>
+    <div class="toggle">
+      <i class="fa fa-coffee" aria-hidden="true"></i></div>
+    <div class="navNames">
+    <ul>
     <li><a href="#veronica">Veronica</a></li>
     <li><a href="#justin">Justin</a></li>
     <li><a href="#stephanie">Stephanie</a></li>
     <li><a href="#nat">Nat</a></li>
+    <li><a href="#kara">Kara</a></li>
+    <li><a href="#jonel">JoNel</a></li>
   </ul>
+
+</div>
+</nav>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script type="text/javascript">
+  $(document).ready(function(){
+    $('.toggle').click(function(){
+      $('ul').toggleClass('active');
+    })
+  })
+</script>
+
 
 
 <section id="veronica" class="veronica_section">
@@ -123,8 +142,6 @@
 <br>
 
   
-
-   
 
 
 </body>
